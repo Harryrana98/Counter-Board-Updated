@@ -4,52 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Conter</title>
-    <style>
-      body {
-        background-image: linear-gradient(#00000085, #00000085),
-          url(https://cdn.pixabay.com/photo/2024/08/18/14/34/folkstone-8978132_1280.jpg);
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-        display: flex;
-        align-items: center;
-        align-content: center;
-      }
-
-      .counter_container {
-        width: 510px;
-        margin: 100px auto;
-
-        text-align: center;
-        align-content: center;
-      }
-
-      h1 {
-        color: #fff;
-      }
-
-      #gym {
-        color: #fff;
-      }
-
-      button {
-        padding: 8px;
-        border-radius: 5px;
-        border: none;
-        margin-left: 10px;
-        background-color: blue;
-        color: #fff;
-        font-weight: bold;
-        cursor: pointer;
-      }
-
-      input {
-        padding: 8px;
-        margin-left: 10px;
-        border-radius: 5px;
-        border: none;
-      }
-    </style>
+    <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
@@ -64,37 +19,5 @@
     </div>
   </body>
 
-  <script>
-    let gyming = document.getElementById("gym");
-
-    let adds = document.querySelector("input");
-
-    function increment() {
-      gyming.innerHTML++;
-      // updateDisplay();
-      // console.log(gyming)
-    }
-
-    function decrement() {
-      if (gyming.innerHTML >= 1) {
-        gyming.innerHTML--;
-      } else {
-        alert("Negative Value Is Not Allow");
-      }
-      // updateDisplay();
-    }
-
-    function reset() {
-      gyming.innerHTML = 0;
-      adds.value=""
-      // updateDisplay();
-    }
-    
-    function add() {
-      let addNumber = Number(gyming.innerHTML) + Number(adds.value);
-      gyming.innerHTML = addNumber;
-      adds.value=""
-      // console.log(addNumber)
-    }
-  </script>
+  <script src="script.js"></script>
 </html>
