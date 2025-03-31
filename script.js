@@ -24,14 +24,12 @@ function reset() {
 }
 
 function add() {
-
-    if(isNaN(adds.innerHTML>0)||Number(adds.innerHTML)){
-
-        let addNumber = Number(gyming.innerHTML) + Number(adds.value);
-        gyming.innerHTML = addNumber;
-        adds.value = "";
-    }
-    else(alert("Please a valid value"))
-  
-  // console.log(addNumber)
+  if ((adds.value > 0) && Number(adds.value)) {
+    let addNumber = Number(gyming.innerHTML) + Number(adds.value);
+    console.log(addNumber);
+    gyming.innerHTML = addNumber;
+    adds.value = "";
+  } else {
+    alert("Please a valid value");
+  }
 }
